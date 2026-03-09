@@ -1,3 +1,6 @@
+-- Top Customer Revenue Contribution
+-- Calculates revenue share of highest value customers
+
 SELECT
   c.customer_id,
   SUM(p.amount_usd) AS total_revenue
