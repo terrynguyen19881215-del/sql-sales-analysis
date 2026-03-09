@@ -1,3 +1,6 @@
+-- Cohort Retention Analysis
+-- Measures customer retention by first purchase month
+
 WITH first_paid AS (
     SELECT
         customer_id,
