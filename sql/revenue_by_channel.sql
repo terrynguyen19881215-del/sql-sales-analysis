@@ -1,3 +1,6 @@
+-- Revenue by Acquisition Channel
+-- Identify which marketing channels generate the most revenue
+
 SELECT
   c.acquisition_channel,
   COUNT(DISTINCT customer_id) AS customers,
