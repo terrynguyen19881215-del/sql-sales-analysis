@@ -27,7 +27,7 @@ The analysis demonstrates practical SQL skills used by data analysts in real bus
 
 # 1. Revenue by Acquisition Channel
 
-![Revenue by Channel](sql/revenue_by_channel_chart.png)
+![Revenue by Channel](images/revenue_by_channel_chart.png)
 
 ### Insight
 
@@ -43,7 +43,7 @@ This suggests that **paid marketing and outbound sales are the primary growth dr
 
 # 2. Monthly Revenue Trend
 
-![Monthly Revenue](sql/monthly_revenue_chart.png)
+![Monthly Revenue](images/monthly_revenue_chart.png)
 
 ### Insight
 
@@ -58,7 +58,7 @@ This pattern may indicate **seasonality or a marketing campaign impact during Fe
 
 # 3. Revenue Share by Customer
 
-![Customer Revenue Share](sql/customer_revenue_share_chart.png)
+![Customer Revenue Share](images/customer_revenue_share_chart.png)
 
 ### Insight
 
@@ -73,7 +73,7 @@ This indicates **customer concentration risk**, where revenue depends heavily on
 
 # 4. MRR Distribution by Subscription Plan
 
-![MRR by Plan](sql/mrr_by_plan_chart.png)
+![MRR by Plan](images/mrr_by_plan_chart.png)
 
 ### Insight
 
