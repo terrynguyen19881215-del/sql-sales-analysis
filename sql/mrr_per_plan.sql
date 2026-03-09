@@ -1,3 +1,6 @@
+-- MRR Distribution by Subscription Plan
+-- Calculates total MRR and customers per plan
+
 SELECT
     plan,
     COUNT(DISTINCT customer_id) AS customers,
