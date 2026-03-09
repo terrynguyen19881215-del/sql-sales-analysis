@@ -147,8 +147,9 @@ This project demonstrates practical SQL techniques:
 
 # Repository Structure
 
-```
 This project answers key SaaS analytics questions:
+
+```
 sql-sales-analysis
 │
 ├─ sql
