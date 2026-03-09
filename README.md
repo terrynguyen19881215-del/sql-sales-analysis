@@ -8,170 +8,168 @@ Tools: SQL (PostgreSQL / BigQuery)
 
 # Project Overview
 
-This project analyzes a SaaS-style dataset to understand:
+This project analyzes a SaaS-style dataset to explore:
 
-• Revenue sources  
-• Customer contribution  
-• Monthly revenue trends  
-• Customer retention behavior  
-• Subscription value distribution  
+- Revenue sources
+- Customer contribution
+- Monthly revenue trends
+- Customer retention behavior
+- Subscription value distribution
 
-The analysis demonstrates core SQL skills used by data analysts in real business scenarios.
+The analysis demonstrates practical SQL skills used by data analysts in real business scenarios.
+
+---
+
+# Key Analysis & Insights
+
+---
+
+# 1. Revenue by Acquisition Channel
+
+![Revenue by Channel](images/revenue_by_channel_chart.png)
+
+### Insight
+
+Paid and Outbound channels generate the majority of revenue.
+
+- **Paid acquisition contributes the largest share of revenue**
+- **Outbound sales is the second most effective channel**
+- Referral and Organic channels generate significantly lower revenue
+
+This suggests that **paid marketing and outbound sales are the primary growth drivers**.
+
+---
+
+# 2. Monthly Revenue Trend
+
+![Monthly Revenue](images/monthly_revenue_chart.png)
+
+### Insight
+
+Revenue fluctuates across months.
+
+- **February shows the highest revenue**
+- January and March generate lower revenue
+
+This pattern may indicate **seasonality or a marketing campaign impact during February**.
+
+---
+
+# 3. Revenue Share by Customer
+
+![Customer Revenue Share](images/revenue_share_chart.png)
+
+### Insight
+
+Revenue distribution is uneven across customers.
+
+- **Customer 1 contributes the highest share of revenue (~37%)**
+- The top two customers contribute **over 65% of total revenue**
+
+This indicates **customer concentration risk**, where revenue depends heavily on a small number of customers.
+
+---
+
+# 4. MRR Distribution by Subscription Plan
+
+![MRR by Plan](images/mrr_plan_chart.png)
+
+### Insight
+
+Subscription plans contribute differently to Monthly Recurring Revenue.
+
+- **Business plan generates the highest revenue per customer**
+- **Basic plan has more customers but lower revenue per user**
+
+This suggests a potential strategy:
+
+- Upsell Basic plan users to higher plans
+- Encourage adoption of premium plans
 
 ---
 
 # Dataset Structure
 
 ### customers
+
 | column | description |
 |------|-------------|
-customer_id | unique customer identifier  
-signup_date | date user signed up  
-acquisition_channel | marketing channel source  
-segment | customer segment (SMB, Enterprise)
+| customer_id | unique customer identifier |
+| signup_date | date customer signed up |
+| acquisition_channel | marketing channel |
+| segment | customer segment |
 
 ---
 
 ### payments
+
 | column | description |
 |------|-------------|
-customer_id | customer making the payment  
-payment_date | payment timestamp  
-amount_usd | payment value  
-status | payment status (paid / failed)
+| customer_id | customer reference |
+| payment_date | payment timestamp |
+| amount_usd | payment amount |
+| status | payment status |
 
 ---
 
 ### subscriptions
+
 | column | description |
 |------|-------------|
-customer_id | subscribed customer  
-plan | subscription plan type  
-mrr_usd | monthly recurring revenue  
-status | subscription status
+| customer_id | subscriber |
+| plan | subscription plan |
+| mrr_usd | monthly recurring revenue |
 
 ---
 
-# SQL Analysis
+# SQL Skills Demonstrated
 
-## 1 Revenue by Acquisition Channel
+This project demonstrates practical SQL techniques:
 
-**Goal:** Identify which marketing channels generate the most revenue.
-
-**Key SQL Skills**
-
-- JOIN
-- Aggregation
-- GROUP BY
-
-**Query**
-
-See:  
-`sql/revenue_by_channel.sql`
-
----
-
-## 2 Monthly Revenue Trend
-
-**Goal:** Track revenue growth over time.
-
-**Business Insight**
-
-Revenue trends reveal:
-
-- business growth
-- seasonality
-- marketing effectiveness
-
-**Query**
-
-See:  
-`sql/monthly_revenue.sql`
-
----
-
-## 3 Top Customer Contribution
-
-**Goal:** Identify customers contributing the largest share of revenue.
-
-**Key SQL Skills**
-
-- CTE
-- Window Functions
-- Revenue share calculation
-
-**Query**
-
-See:  
-`sql/top_customer_share.sql`
-
----
-
-## 4 Cohort Retention Analysis
-
-**Goal:** Analyze customer retention behavior over time.
-
-Cohort analysis groups customers by their **first purchase month** and measures retention across future months.
-
-**Key SQL Skills**
-
-- CTE
-- Cohort grouping
+- JOIN operations
+- Aggregations (SUM, COUNT)
 - Window functions
-- Time indexing
-
-**Query**
-
-See:  
-`sql/cohort_retention.sql`
+- Cohort analysis
+- Revenue share calculation
+- SaaS MRR metrics
 
 ---
 
-## 5 MRR by Subscription Plan
+# Tools Used
 
-**Goal:** Analyze Monthly Recurring Revenue distribution across subscription plans.
-
-This is a key SaaS metric used to evaluate product pricing and plan adoption.
-
-**Query**
-
-See:  
-`sql/mrr_per_plan.sql`
-
----
-
-# Key SQL Skills Demonstrated
-
-- JOIN
-- GROUP BY
-- Aggregations
-- CTE
-- Window Functions
-- Cohort Analysis
-- Revenue Metrics
+- SQL (PostgreSQL / BigQuery)
+- pgAdmin
+- Excel (for charts)
+- GitHub (portfolio)
 
 ---
 
 # Repository Structure
----
 
-# Business Value
-
-This analysis demonstrates how SQL can be used to answer key business questions:
-
-• Which channels bring the most valuable customers?  
-• How is revenue evolving over time?  
-• Who are the highest-value customers?  
-• How well do customers retain over time?  
-• Which subscription plans generate the most revenue?
 
 ---
 
-# Next Improvements
+# Business Questions Answered
 
-Future enhancements could include:
+This project answers key SaaS analytics questions:
 
-• churn analysis  
-• LTV calculation  
-• funnel analysis  
-• dashboard visualization (Power BI / Tableau)
+- Which acquisition channels generate the most revenue?
+- How does revenue evolve over time?
+- Are revenues concentrated among a few customers?
+- Which subscription plans generate the most MRR?
+
+---
+
+# Project Report
+
+A full project report is available here:
+
+`report/saas_revenue_retention_analysis.pdf`
+
+---
+
+# GitHub Repository
+
+Full project:
+
+https://github.com/terrynguyen19881215-del/sql-sales-analysis
