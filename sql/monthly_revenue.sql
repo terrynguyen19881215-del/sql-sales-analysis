@@ -1,3 +1,7 @@
+-- Monthly Revenue Trend
+-- Calculates total paid revenue per month
+-- Useful for tracking business growth over time
+
 SELECT
   DATE_TRUNC('month', payment_date) AS month,
   SUM(amount_usd) AS revenue
