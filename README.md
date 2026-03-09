@@ -165,7 +165,7 @@ This project answers key SaaS analytics questions:
 
 A full project report is available here:
 
-`report/saas_revenue_retention_analysis.pdf`
+`sql/saas_revenue_retention_analysis_consulting.pdf`
 
 ---
 
