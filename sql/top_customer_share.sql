@@ -1,5 +1,5 @@
 -- Top Customer Revenue Contribution
--- Calculates revenue share of highest value customers
+-- Calculates revenue share of top 5 value customers
 
 SELECT
   c.customer_id,
