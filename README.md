@@ -147,6 +147,8 @@ This project demonstrates practical SQL techniques:
 
 # Repository Structure
 
+```
+This project answers key SaaS analytics questions:
 sql-sales-analysis
 │
 ├─ sql
@@ -163,7 +165,7 @@ sql-sales-analysis
 │   └─ mrr_plan_chart.png
 │
 ├─ report
-│   └─ saas_revenue_retention_analysis.pdf
+│   └─ saas_revenue_retention_analysis_consulting.pdf
 │
 └─ README.md
 ---
@@ -181,7 +183,7 @@ This project answers key SaaS analytics questions:
 
 # Project Report
 
-A full project report is available here:
+A full analytics report including methodology, SQL explanations, charts, and business insights can be found here:
 
 `sql/saas_revenue_retention_analysis_consulting.pdf`
 
