@@ -147,7 +147,25 @@ This project demonstrates practical SQL techniques:
 
 # Repository Structure
 
-
+sql-sales-analysis
+│
+├─ sql
+│   ├─ revenue_by_channel.sql
+│   ├─ monthly_revenue.sql
+│   ├─ top_customer_share.sql
+│   ├─ cohort_retention.sql
+│   └─ mrr_per_plan.sql
+│
+├─ images
+│   ├─ revenue_by_channel_chart.png
+│   ├─ monthly_revenue_chart.png
+│   ├─ revenue_share_chart.png
+│   └─ mrr_plan_chart.png
+│
+├─ report
+│   └─ saas_revenue_retention_analysis.pdf
+│
+└─ README.md
 ---
 
 # Business Questions Answered
