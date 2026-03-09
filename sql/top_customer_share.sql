@@ -10,4 +10,4 @@ JOIN customers c
 WHERE p.status = 'paid'
 GROUP BY c.customer_id
 ORDER BY total_revenue DESC
-LIMIT 1;
+LIMIT 5;
