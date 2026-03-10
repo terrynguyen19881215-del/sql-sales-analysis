@@ -193,9 +193,7 @@ This project answers key SaaS analytics questions:
 
 A full analytics report including methodology, SQL explanations, charts, and business insights can be found here:
 
-Full consulting-style analytics report:
-
-report/saas_revenue_retention_analysis_consulting.pdf
+[Download Full Report](report/saas_revenue_retention_analysis_consulting.pdf)
 ---
 
 # GitHub Repository
