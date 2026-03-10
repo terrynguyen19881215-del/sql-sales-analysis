@@ -153,22 +153,22 @@ This project demonstrates practical SQL techniques used in business analysis:
 This project answers key SaaS analytics questions:
 
 ```
-sql-sales-analysis
+sql-sales-analysis/
 │
-├─ sql
-│   ├─ revenue_by_channel.sql
-│   ├─ monthly_revenue.sql
-│   ├─ top_customer_share.sql
-│   ├─ cohort_retention.sql
-│   └─ mrr_per_plan.sql
+├─ sql/
+│   ├─ 01_revenue_analysis.sql
+│   ├─ 02_cohort_retention.sql
+│   ├─ 03_channel_analysis.sql
+│   ├─ 04_risk_analysis.sql
+│   └─ 05_customer_ltv_analysis.sql
 │
-├─ images
+├─ images/
 │   ├─ revenue_by_channel_chart.png
 │   ├─ monthly_revenue_chart.png
 │   ├─ revenue_share_chart.png
 │   └─ mrr_plan_chart.png
 │
-├─ report
+├─ report/
 │   └─ saas_revenue_retention_analysis_consulting.pdf
 │
 └─ README.md
