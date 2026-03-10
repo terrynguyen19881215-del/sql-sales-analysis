@@ -1,5 +1,5 @@
-# SQL Portfolio Project #1
-## SaaS Revenue & Retention Analysis
+# SaaS Revenue & Retention Analysis
+### SQL Portfolio Project
 
 Author: Alice Ng
 
@@ -7,89 +7,94 @@ Tools: SQL (PostgreSQL / BigQuery)
 
 ---
 
-# Project Overview
+## Project Overview
 
-This project analyzes a SaaS-style dataset to explore:
+This project analyzes a SaaS-style dataset to evaluate revenue performance, customer retention, acquisition channel efficiency, and customer lifetime value.
 
-- Revenue sources
-- Customer contribution
-- Monthly revenue trends
-- Customer retention behavior
-- Subscription value distribution
-
-The analysis demonstrates practical SQL skills used by data analysts in real business scenarios.
+The analysis focuses on practical business questions commonly faced by data analysts, including revenue trends, customer concentration, retention behavior, pricing performance, and long-term growth sustainability.
 
 ---
 
-# Key Analysis & Insights
+## Key Analysis & Insights
 
----
-
-# 1. Revenue by Acquisition Channel
+### 1. Revenue by Acquisition Channel
 
 ![Revenue by Channel](images/revenue_by_channel_chart.png)
 
-### Insight
+#### Insight
 
-Paid and Outbound channels generate the majority of revenue.
+Paid and Outbound channels generate the largest share of revenue.
 
-- **Paid acquisition contributes the largest share of revenue**
-- **Outbound sales is the second most effective channel**
-- Referral and Organic channels generate significantly lower revenue
+- Paid acquisition contributes the highest total revenue
+- Outbound is the second strongest revenue channel
+- Referral and Organic channels contribute less revenue overall
 
-This suggests that **paid marketing and outbound sales are the primary growth drivers**.
+This suggests that paid marketing and outbound sales are currently the main growth drivers.
 
 ---
 
-# 2. Monthly Revenue Trend
+### 2. Monthly Revenue Trend
 
 ![Monthly Revenue](images/monthly_revenue_chart.png)
 
-### Insight
+#### Insight
 
-Revenue fluctuates across months.
+Revenue fluctuates across months rather than growing steadily.
 
-- **February shows the highest revenue**
-- January and March generate lower revenue
+- February records the highest revenue
+- January and March are lower by comparison
 
-This pattern may indicate **seasonality or a marketing campaign impact during February**.
+This pattern may indicate campaign-driven growth or short-term revenue concentration rather than stable recurring growth.
 
 ---
 
-# 3. Revenue Share by Customer
+### 3. Revenue Share by Customer
 
 ![Customer Revenue Share](images/customer_revenue_share_chart.png)
 
-### Insight
+#### Insight
 
-Revenue distribution is uneven across customers.
+Revenue is concentrated among a small number of customers.
 
-- **Customer 1 contributes the highest share of revenue (~37%)**
-- The top two customers contribute **over 65% of total revenue**
+- Customer 1 contributes the highest share of revenue
+- The top two customers account for over 65% of total revenue
 
-This indicates **customer concentration risk**, where revenue depends heavily on a small number of customers.
+This indicates concentration risk and suggests the business may be exposed if a major customer churns.
 
 ---
 
-# 4. MRR Distribution by Subscription Plan
+### 4. MRR Distribution by Subscription Plan
 
 ![MRR by Plan](images/mrr_by_plan_chart.png)
 
-### Insight
+#### Insight
 
 Subscription plans contribute differently to Monthly Recurring Revenue.
 
-- **Business plan generates the highest revenue per customer**
-- **Basic plan has more customers but lower revenue per user**
+- The Business plan generates the highest revenue contribution
+- Lower-tier plans have more customers but lower value per customer
 
-This suggests a potential strategy:
-
-- Upsell Basic plan users to higher plans
-- Encourage adoption of premium plans
+This suggests an upsell opportunity from lower-tier plans to higher-value subscriptions.
 
 ---
 
-# Dataset Structure
+## Business Insights
+
+**Revenue concentration risk**
+
+Revenue is highly concentrated among a small number of customers. This creates exposure to volatility if one or two major accounts churn.
+
+**Customer dependency**
+
+The current revenue structure suggests dependency on several high-value customers rather than a broad and balanced customer base. A more diversified customer mix would reduce risk.
+
+**Growth sustainability**
+
+Although revenue shows periods of growth, long-term sustainability depends on improving retention and expanding the number of paying customers. Sustainable growth should come from a broader customer base, not only a few large contributors.
+
+---
+
+## Dataset Structure
 
 ### customers
 
@@ -100,8 +105,6 @@ This suggests a potential strategy:
 | acquisition_channel | marketing channel |
 | segment | customer segment |
 
----
-
 ### payments
 
 | column | description |
@@ -110,8 +113,6 @@ This suggests a potential strategy:
 | payment_date | payment timestamp |
 | amount_usd | payment amount |
 | status | payment status |
-
----
 
 ### subscriptions
 
@@ -125,14 +126,16 @@ This suggests a potential strategy:
 
 # SQL Skills Demonstrated
 
-This project demonstrates practical SQL techniques:
+This project demonstrates practical SQL techniques used in business analysis:
 
 - JOIN operations
-- Aggregations (SUM, COUNT)
+- Aggregations using SUM, COUNT, and AVG
+- Common Table Expressions (CTEs)
 - Window functions
-- Cohort analysis
-- Revenue share calculation
+- Cohort retention analysis
+- Revenue share and concentration analysis
 - SaaS MRR metrics
+- Customer lifetime value (LTV) analysis
 
 ---
 
@@ -180,6 +183,9 @@ This project answers key SaaS analytics questions:
 - How does revenue evolve over time?
 - Are revenues concentrated among a few customers?
 - Which subscription plans generate the most MRR?
+- How well are customer cohorts retained over time?
+- Which channels bring higher-value customers?
+- What does customer lifetime value look like across the business?
 
 ---
 
