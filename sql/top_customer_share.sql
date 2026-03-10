@@ -9,19 +9,26 @@ WITH revenue AS (
 	FROM payments
 	WHERE status = 'paid'
 	GROUP BY customer_id
-), total_revenue_table AS (
-	SELECT
-		customer_id,
-		customer_revenue,
-		SUM(r.customer_revenue) OVER () AS total_revenue
-	FROM revenue r
+), ranked AS (
+    SELECT
+        customer_id,
+        customer_revenue,
+        RANK() OVER (ORDER BY customer_revenue DESC) AS revenue_rank,
+        SUM(customer_revenue) OVER () AS total_revenue,
+        SUM(customer_revenue) OVER (
+            ORDER BY customer_revenue DESC
+            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+        ) AS cumulative_revenue
+    FROM revenue
 )
 
 SELECT
 	customer_id,
 	customer_revenue,
-	ROUND(customer_revenue *100.0 /total_revenue, 1) AS revenue_share
-FROM total_revenue_table
-ORDER BY customer_revenue DESC
+	revenue_rank,
+	ROUND(customer_revenue *100.0 /total_revenue, 1) AS revenue_share,
+	ROUND(cumulative_revenue * 100.0 / total_revenue, 1) AS cumulative_share_pct
+FROM ranked
+ORDER BY revenue_rank DESC
 LIMIT 5;
 
