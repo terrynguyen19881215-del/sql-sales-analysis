@@ -194,7 +194,7 @@ This project answers key SaaS analytics questions:
 A full analytics report including methodology, SQL explanations, charts, and business insights can be found here:
 
 [[Download Full Report](report/Portfolio SQL Project 1.pdf)
-](https://github.com/terrynguyen19881215-del/sql-sales-analysis/blob/main/report/saas_revenue_retention_analysis_consulting.pdf)
+]([https://github.com/terrynguyen19881215-del/sql-sales-analysis/blob/main/report/saas_revenue_retention_analysis_consulting.pdf](https://github.com/terrynguyen19881215-del/sql-sales-analysis/blob/875119306cd46b649db9217b910d39ed1ba877ef/report/Portfolio%20SQL%20Project%201.pdf))
 ---
 
 # GitHub Repository
