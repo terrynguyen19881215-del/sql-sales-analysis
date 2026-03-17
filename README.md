@@ -78,11 +78,75 @@ This suggests an upsell opportunity from lower-tier plans to higher-value subscr
 
 ---
 
+### 5. Retention by Acquisition Channel
+
+#### Insight
+
+Retention analysis across acquisition channels shows similar retention behavior.
+
+- Paid, Referral, and Organic users have comparable retention rates
+- Most users drop off after the first active month
+
+This suggests that retention is not primarily driven by acquisition channel, but by product experience and early engagement.
+
+---
+
+### 6. Churn Analysis
+
+#### Insight
+
+Churn analysis reveals a consistent pattern of early user drop-off.
+
+- Multiple cohorts experience near-complete churn after the first month
+- High churn is observed across acquisition channels
+
+This indicates that users are not continuing engagement beyond initial usage, suggesting issues with onboarding or product value delivery.
+
+---
+
+### 7. Cohort Churn Analysis
+
+#### Insight
+
+Cohort-based analysis shows no clear improvement in retention over time.
+
+- Early cohorts drop off quickly after initial activity
+- Newer cohorts do not demonstrate stronger retention patterns
+
+This suggests that the product has not yet achieved retention improvements across cohorts.
+
+---
+
+### 8. Unit Economics (LTV / CAC)
+
+#### Insight
+
+Unit economics analysis compares customer lifetime value (LTV) with acquisition cost (CAC).
+
+- Referral channel shows the highest LTV/CAC ratio and strongest efficiency
+- Paid and Organic channels have LTV lower than CAC, indicating negative unit economics
+
+This suggests that current growth may not be sustainable if acquisition costs exceed long-term value.
+
+---
+
 ## Business Insights
+
+**Early churn problem**
+
+Most users do not return after their first month, indicating a significant early churn issue.
+
+**Retention is product-driven**
+
+Retention rates are similar across channels, suggesting that improving product experience is more impactful than optimizing acquisition sources.
 
 **Revenue concentration risk**
 
 Revenue is highly concentrated among a small number of customers. This creates exposure to volatility if one or two major accounts churn.
+
+**Unit economics imbalance**
+
+Some acquisition channels are not profitable (LTV < CAC), which may lead to unsustainable growth.
 
 **Customer dependency**
 
@@ -136,6 +200,9 @@ This project demonstrates practical SQL techniques used in business analysis:
 - Revenue share and concentration analysis
 - SaaS MRR metrics
 - Customer lifetime value (LTV) analysis
+- Unit economics imbalance**
+
+Some acquisition channels are not profitable (LTV < CAC), which may lead to unsustainable growth.
 
 ---
 
@@ -161,6 +228,8 @@ sql-sales-analysis/
 │   ├─ 03_channel_analysis.sql
 │   ├─ 04_risk_analysis.sql
 │   └─ 05_customer_ltv_analysis.sql
+│   └─ 06_churn_analysis.sql
+│   └─ 07_unit_economics.sql
 │
 ├─ images/
 │   ├─ revenue_by_channel_chart.png
@@ -184,8 +253,9 @@ This project answers key SaaS analytics questions:
 - Are revenues concentrated among a few customers?
 - Which subscription plans generate the most MRR?
 - How well are customer cohorts retained over time?
-- Which channels bring higher-value customers?
-- What does customer lifetime value look like across the business?
+- What is the churn rate across months and channels?
+- How does churn vary across cohorts?
+- Which channels are profitable based on LTV/CAC?
 
 ---
 
