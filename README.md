@@ -3,7 +3,7 @@
 
 **Author:** Nina Ng (Data Analyst)
 
-Tools: SQL (PostgreSQL / BigQuery)
+Tools: PostgreSQL, pgAdmin, Excel, GitHub
 
 ---
 
@@ -19,7 +19,7 @@ The analysis focuses on practical business questions commonly faced by data anal
 
 ### 1. Revenue by Acquisition Channel
 
-![Revenue by Channel](images/revenue_by_channel_chart.png)
+![Revenue by Acquisition Channel](images/revenue_by_channel_chart.png)
 
 #### Insight
 
@@ -146,7 +146,9 @@ Revenue is highly concentrated among a small number of customers. This creates e
 
 **Unit economics imbalance**
 
-Some acquisition channels are not profitable (LTV < CAC), which may lead to unsustainable growth.
+- Customer lifetime value analysis
+- Churn analysis
+- LTV/CAC unit economics
 
 **Customer dependency**
 
@@ -208,7 +210,7 @@ Some acquisition channels are not profitable (LTV < CAC), which may lead to unsu
 
 # Tools Used
 
-- SQL (PostgreSQL / BigQuery)
+- SQL (PostgreSQL)
 - pgAdmin
 - Excel (for charts)
 - GitHub (portfolio)
@@ -221,26 +223,22 @@ This project answers key SaaS analytics questions:
 
 ```
 sql-sales-analysis/
-│
-├─ sql/
-│   ├─ 01_revenue_analysis.sql
-│   ├─ 02_cohort_retention.sql
-│   ├─ 03_channel_analysis.sql
-│   ├─ 04_risk_analysis.sql
-│   └─ 05_customer_ltv_analysis.sql
-│   └─ 06_churn_analysis.sql
-│   └─ 07_unit_economics.sql
-│
-├─ images/
-│   ├─ revenue_by_channel_chart.png
-│   ├─ monthly_revenue_chart.png
-│   ├─ revenue_share_chart.png
-│   └─ mrr_plan_chart.png
-│
-├─ report/
-│   └─ saas_revenue_retention_analysis_consulting.pdf
-│
-└─ README.md
+├── sql/
+│   ├── 01-revenue_analysis.sql
+│   ├── 02-cohort_retention_analysis.sql
+│   ├── 03_channel_analysis.sql
+│   ├── 04_risk_analysis.sql
+│   ├── 05_customer_ltv_analysis.sql
+│   ├── 06_churn_analysis.sql
+│   └── 07_unit_economics.sql
+├── images/
+│   ├── customer_revenue_share_chart.png
+│   ├── monthly_revenue_chart.png
+│   ├── mrr_by_plan_chart.png
+│   └── revenue_by_channel_chart.png
+├── report/
+│   └── saas_revenue_retention_analysis_consulting.pdf
+└── README.md
 ```
 ---
 
