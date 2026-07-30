@@ -35,7 +35,7 @@ This suggests that paid marketing and outbound sales are currently the main grow
 
 ### 2. Monthly Revenue Trend
 
-![Monthly Revenue](images/monthly_revenue_chart.png)
+![Monthly Revenue Trend](images/monthly_revenue_chart.png)
 
 #### Insight
 
@@ -65,7 +65,7 @@ This indicates concentration risk and suggests the business may be exposed if a 
 
 ### 4. MRR Distribution by Subscription Plan
 
-![MRR by Plan](images/mrr_by_plan_chart.png)
+![MRR by Subscription Plan](images/mrr_by_plan_chart.png)
 
 #### Insight
 
