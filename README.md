@@ -1,7 +1,7 @@
 # SaaS Revenue & Retention Analysis
 ### SQL Portfolio Project
 
-Author: Nina Nguyen
+**Author:** Nina Ng (Data Analyst)
 
 Tools: SQL (PostgreSQL / BigQuery)
 
@@ -270,4 +270,4 @@ A full analytics report including methodology, SQL explanations, charts, and bus
 
 Full project:
 
-https://github.com/terrynguyen19881215-del/sql-sales-analysis
+https://github.com/nina-ng-labs/sql-sales-analysis
